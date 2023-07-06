@@ -1,0 +1,31 @@
+div {
+
+  padding: var(--NormalPadding);
+  margin-top: 1vmin;
+  margin-bottom: 1vmin;
+
+}
+
+div.FullWidth {
+
+  position: relative;
+  left: 0;
+  width: 100%;
+
+}
+
+div.NoBackground {
+  background: none;
+  padding: 0;
+}
+
+button {
+
+  position: relative;
+  top: -5px;
+  background: var(--InteractiveBackground);
+  border: none;
+  border-radius: var(--NormalBorderRadius);
+  padding: var(--NormalPadding);
+
+}

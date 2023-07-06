@@ -1,0 +1,41 @@
+/* Set a CSS variety for the dark theme. */
+
+:root.DarkTheme {
+
+  --Color0: #eeeeee;
+  --Color1: #111111;
+  --Color2: #004080;
+  --BrightnessDifference: 1.75;
+
+}
+
+/* Set a CSS variety for the light theme. */
+
+:root.LightTheme {
+
+  --Color0: #111111;
+  --Color1: #eeeeee;
+  --Color2: rgb(0, 128, 192);
+  --BrightnessDifference: 0.25;
+
+}
+
+/* Set a CSS variety for the web. */
+
+:root {
+
+  --Background: var(--Color1);
+  --Color: var(--Color0);
+  --BaseFontSize: 1.75vmin;
+
+  --LowPadding: 5px;
+  --NormalPadding: 10px;
+  --HighPadding: 15px;
+
+  --LowBorderRadius: 5px;
+  --NormalBorderRadius: 10px;
+  --HighBorderRadius: 15px;
+
+  --InteractiveBackground: var(--Color2);
+
+}
