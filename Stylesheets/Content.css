@@ -1,50 +1,28 @@
 div {
 
+  background: var(--Translucent);
   padding: var(--NormalPadding);
-  margin-top: 1vmin;
-  margin-bottom: 1vmin;
+  margin: 15px;
+  border-radius: var(--HighBorderRadius);
 
 }
 
 div.FullWidth {
 
-  position: relative;
-  left: 0;
   width: 100%;
+  margin: 0;
+  border-radius: none;
 
 }
 
 div.NoBackground {
+
   background: none;
+}
+
+div.NoPadding {
+
   padding: 0;
-}
-
-button {
-
-  position: relative;
-  top: -5px;
-  background: var(--InteractiveBackground);
-  border: none;
-  border-radius: var(--NormalBorderRadius);
-  padding: var(--NormalPadding);
-
-}
-button:hover {
-
-  filter: brightness(calc(100% * var(--BrightnessDifference)));
-
-}
-
-button:active,
-button:focus {
-
-  filter: brightness(calc(100% * var(--HighBrightnessDifference)));
-
-}
-
-a {
-
-  text-decoration: none;
 
 }
 
@@ -54,6 +32,67 @@ h3 {  font-size: 3rem;  }
 h4 {  font-size: 2rem;  }
 h5 {  font-size: 1.5rem;  }
 h6 {  font-size: 1rem;  }
+
+button {
+
+  background: var(--InteractiveBackground);
+  border: none;
+  border-radius: var(--NormalBorderRadius);
+  padding: var(--NormalPadding);
+
+}
+
+a {
+
+  text-decoration: none;
+
+}
+
+button:hover,
+a:hover {
+
+  filter: brightness(calc(100% * var(--BrightnessDifference)));
+
+}
+
+button:active,
+button:focus,
+a:active,
+a:focus {
+
+  filter: brightness(calc(100% * var(--HighBrightnessDifference)));
+
+}
+
+.rectangle {
+  border: 2px solid #3cff00;
+  width: 75%;
+  height: 65vh;
+  margin-top: 3%;
+  margin-left: 10%;
+  border-radius: 50px;
+  background:none;
+}
+
+.heading {
+color: #eeeeee;
+font-size: 4rem;
+text-align: center;
+font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.about {
+color: #eeeeee;
+font-size: 2rem;
+text-align: right;
+width: 35%;
+float: right;
+margin-right: 5%;
+margin-top: 8%;
+font-family: 'Poppins', sans-serif;
+text-transform:capitalize;
+}
+
 .aboutimage {
   width: 55%;
   height: 85%;
