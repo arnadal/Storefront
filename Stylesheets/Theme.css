@@ -26,7 +26,8 @@
 
   --Background: var(--Color1);
   --Color: var(--Color0);
-  --BaseFontSize: 1.75vmin;
+  --DefaultFontSize: 1.75vmin;
+  --DefaultFontFamily: 'Poppins', sans-serif;
 
   --LowPadding: 5px;
   --NormalPadding: 10px;
