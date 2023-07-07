@@ -9,9 +9,11 @@ div {
 
 div.FullWidth {
 
-  width: 100%;
+  width: calc(100% - 2.5px);
   margin: 0;
-  border-radius: none;
+  /* margin-top: 10%; */
+  margin-bottom: 15px;
+  border-radius: 0;
 
 }
 
@@ -23,6 +25,12 @@ div.NoBackground {
 div.NoPadding {
 
   padding: 0;
+
+}
+
+div.NoBorderRadius {
+
+  border-radius: 0;
 
 }
 

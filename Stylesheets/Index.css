@@ -29,8 +29,8 @@ body {
 
 nav {
 
-  background: var(--Translucent);
-  position: fixed;
+  background: var(--Color1);
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,9 +39,15 @@ nav {
 
 }
 
-nav + div {
+/* nav + div {
 
   margin-top: 10%;
+
+} */
+
+nav div#NavigationalContent {
+
+  background: var(--Color1);
 
 }
 
@@ -55,6 +61,7 @@ nav div:nth-child(1) {
 
 nav div#NavigationalButtons {
 
+  background: var(--Color1);
   position: fixed;
   top: 5px;
   right: 5%;
