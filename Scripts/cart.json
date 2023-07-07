@@ -1,0 +1,147 @@
+[
+    {
+      "ItemName": "Shoes",
+      "Image": "../Media/shoes.jpg",
+      "Price": "₹1159"
+    },
+    {
+      "ItemName": "Earphones",
+      "Image": "../Media/boatjpg.jpg",
+      "Price": "₹1099"
+    },
+    {
+      "ItemName": "Shirts",
+      "Image": "../Media/shirt.jpg",
+      "Price": "₹489"
+    },
+    {
+      "ItemName": "T-shirts",
+      "Image": "../Media/tshirt.jpg",
+      "Price": "₹369"
+    },
+    {
+      "ItemName": "Jeans",
+      "Image": "../Media/jean.jpg",
+      "Price": "₹599"
+    },
+    {
+      "ItemName": "Fan",
+      "Image": "../Media/fan.jpg",
+      "Price": "₹1399"
+    },
+    {
+      "ItemName": "Air Conditionar",
+      "Image": "../Media/ac.jpg",
+      "Price": "₹31,499"
+    },
+    {
+      "ItemName": "Table",
+      "Image": "../Media/table.jpg",
+      "Price": "₹2099"
+    },
+    {
+      "ItemName": "Chair",
+      "Image": "../Media/chair.jpg",
+      "Price": "₹24,999"
+    },
+    {
+      "ItemName": "Remote Control Car",
+      "Image": "../Media/rccar.jpg",
+      "Price": "₹699"
+    },
+    {
+      "ItemName": "Band-aid",
+      "Image": "../Media/bandaid.jpg",
+      "Price": "₹220"
+    },
+    {
+      "ItemName": "Refrigerators",
+      "Image": "../Media/ref.jpg",
+      "Price": "₹12390"
+    },
+    {
+      "ItemName": "Microwaves",
+      "Image": "../Media/microwave.jpg",
+      "Price": "₹5890"
+    },
+    {
+      "ItemName": "Washing Machine",
+      "Image": "../Media/washingmachine.jpg",
+      "Price": "₹15790"
+    },
+    {
+      "ItemName": "Laptop",
+      "Image": "../Media/laptop.jpg",
+      "Price": "₹87990"
+    },
+    {
+      "ItemName": "Mobile",
+      "Image": "../Media/iphone.jpg",
+      "Price": "₹70999"
+    },
+    {
+      "ItemName": "Smart Watch",
+      "Image": "../Media/smartwatch.jpg",
+      "Price": "₹1099"
+    },
+    {
+      "ItemName": "Bed",
+      "Image": "../Media/bed.jpg",
+      "Price": "₹65999"
+    },
+    {
+      "ItemName": "PlayStation 5",
+      "Image": "../Media/ps.jpg",
+      "Price": "₹54999"
+    },
+    {
+      "ItemName": "Bags",
+      "Image": "../Media/bag.jpg",
+      "Price": "₹2199"
+    },
+    {
+      "ItemName": "Umbrella",
+      "Image": "../Media/umbrella.jpg",
+      "Price": "₹599"
+    },
+    {
+      "ItemName": "Soap",
+      "Image": "../Media/soap.jpg",
+      "Price": "₹570"
+    },
+    {
+      "ItemName": "Makeup Kit",
+      "Image": "../Media/makeup.jpg",
+      "Price": "₹295"
+    },
+    {
+      "ItemName": "Let It Snow",
+      "Image": "../Media/let.jpg",
+      "Price": "₹269"
+    },
+    {
+      "ItemName": "Mosquito Racket Bat",
+      "Image": "../Media/bat.jpg",
+      "Price": "₹506"
+    },
+    {
+      "ItemName": "Jewellery",
+      "Image": "../Media/jwell.jpg",
+      "Price": "₹3500"
+    },
+    {
+      "ItemName": "Guitar",
+      "Image": "../Media/guitar.jpg",
+      "Price": "₹100"
+    },
+    {
+      "ItemName": "Dog Food",
+      "Image": "../Media/dog.jpg",
+      "Price": "₹2320"
+    },
+    {
+      "ItemName": "Football",
+      "Image": "../Media/foot.jpg",
+      "Price": "₹349"
+    }
+  ]
