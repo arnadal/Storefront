@@ -37,7 +37,8 @@
   --NormalBorderRadius: 10px;
   --HighBorderRadius: 15px;
 
-  --BrightnessDifference: 0.25;
+  --BrightnessDifference: 0.75;
+  --HighBrightnessDifference: 0.66;
   --InteractiveBackground: var(--Color2);
 
 }
