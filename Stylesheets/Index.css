@@ -22,24 +22,43 @@ body {
 
 nav {
 
+  background: inherit;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 7.5%;
-  background: inherit;
+  padding: 10px 0;
   filter: brightness(calc(100% * var(--BrightnessDifference)));
 
 }
 
-nav div:first-child {
+nav div:nth-child(1) {
 
+  width: 75%;
+  margin: 0;
   float: left;
 
 }
 
 nav div#NavigationalButtons {
 
-  float: right;
+  position: fixed;
+  top: 5px;
+  right: 5%;
+  width: 12.5%;
+  margin: 0;
+  text-align: right;
+
+}
+
+nav a {
+
+  display: inline;
+
+}
+
+nav a:not(:first-child) {
+
+  margin-left: 5%;
 
 }
