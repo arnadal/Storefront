@@ -3,7 +3,6 @@
   outline: none;
   color: var(--Color0);
   transition: background 500ms, color 500ms, font-size 500ms, border-radius 500ms, box-shadow 500ms, filter 500ms;
-  font-family: var(--DefaultFontFamily);
   font-size: var(--DefaultFontSize);
 
 }
@@ -24,13 +23,14 @@ body {
   background-size: 100% 100%;
   padding: 0;
   margin: 0;
+  font-family: var(--DefaultFontFamily)
 
 }
 
 nav {
 
-  background: var(--Color1);
-  position: sticky;
+  background: var(--Translucent);
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,15 +39,9 @@ nav {
 
 }
 
-/* nav + div {
+nav + div {
 
   margin-top: 10%;
-
-} */
-
-nav div#NavigationalContent {
-
-  background: var(--Color1);
 
 }
 
@@ -61,7 +55,6 @@ nav div:nth-child(1) {
 
 nav div#NavigationalButtons {
 
-  background: var(--Color1);
   position: fixed;
   top: 5px;
   right: 5%;

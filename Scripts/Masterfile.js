@@ -17,5 +17,3 @@ document.querySelector(`nav`).innerHTML = `
 
   </div>
 `;
-
-document.querySelector(`div#InitialBlock`).style.marginTop = getComputedStyle(document.querySelector(`nav`));
