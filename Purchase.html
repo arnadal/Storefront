@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Stylesheets/Index.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Content.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
 
@@ -18,34 +19,37 @@
 
     <nav>
 
-      <div id="NavigationalContent">
-
-        <div class="NoBackground">
-          <a href="/">Overview</a>
-          <a href="/">Start Purchasing</a>
-          <a href="/">About</a>
-        </div>
-
-        <div id="NavigationalButtons">
-
-          <a href="#">
-            <button>Your Cart</button>
-          </a>
-
-        </div>
-
-      </div>
+      Loading…
 
     </nav>
 
     <div>
 
       <h1>Purchase!</h1>
-      <p>From a set of large expanse, search what you require!</p>
+      <p>From a set of large expanse of items, search what you require!</p>
+
+      <br>
+
+      <div style="text-align: center;">
+        <b style="font-size: 2rem;">What do you need to find?</b>
+        <br>
+        <input id="Searchbar"></input> &nbsp; <button style="border-radius: 100px;" onclick="SearchItem(document.querySelector(`input#Searchbar`).value)"><i class="material-icons">search</i></button>
+      </div>
 
     </div>
 
+    <div>
+
+      <h2>Items</h2>
+      <div class="NoBackground NoPadding NoBorderRadius">
+
+      </div>
+
+    </div>
+
+    <script src="Scripts/Masterfile.js"></script>
     <script src="Scripts/Index.js"></script>
+    <script src="Scripts/ItemFetcher.js"></script>
 
   </body>
 

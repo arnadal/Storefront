@@ -1,7 +1,7 @@
 div {
 
   background: var(--Translucent);
-  padding: var(--NormalPadding);
+  padding: var(--HighPadding);
   margin: 15px;
   border-radius: var(--HighBorderRadius);
 
@@ -33,13 +33,26 @@ h4 {  font-size: 2rem;  }
 h5 {  font-size: 1.5rem;  }
 h6 {  font-size: 1rem;  }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+  font-family: var(--HeadingsFontFamily);
+  font-weight: 900;
+
+}
+
 button {
 
   background: var(--InteractiveBackground);
   border: none;
   border-radius: var(--NormalBorderRadius);
   padding: var(--NormalPadding);
-  font-family: var(--DefaultFontFamily)
+  font-family: var(--DefaultFontFamily);
+  border-bottom: 5px var(--DarkColor2) solid;
 
 }
 
@@ -49,8 +62,21 @@ a {
 
 }
 
+input {
+
+  color: var(--Color1);
+  width: 50%;
+  border: none;
+  border-radius: 100px;
+  padding: var(--HighPadding);
+  font-family: var(--DefaultFontFamily);
+  border-bottom: 5px var(--DarkColor0) solid;
+
+}
+
 button:hover,
-a:hover {
+a:hover,
+input:hover {
 
   filter: brightness(calc(100% * var(--BrightnessDifference)));
 
@@ -59,7 +85,9 @@ a:hover {
 button:active,
 button:focus,
 a:active,
-a:focus {
+a:focus,
+input:active,
+input:focus {
 
   filter: brightness(calc(100% * var(--HighBrightnessDifference)));
 

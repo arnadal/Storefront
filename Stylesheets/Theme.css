@@ -1,8 +1,8 @@
 :root.DarkTheme {
 
-  --Color0: #EEEEEE;
+  --Color0: #EEEEEE; --DarkColor0: #909090;
   --Color1: #111111;
-  --Color2: #0080B0; --TranslucentColor2: #0080B0EE;
+  --Color2: #0080B0; --TranslucentColor2: #0080B0EE; --DarkColor2: #00658a;
   --Translucent: #EEEEEE10;
 
 }
@@ -13,7 +13,7 @@
 
   --Color0: #111111;
   --Color1: #EEEEEE;
-  --Color2: #00A0E0;
+  --Color2: #00A0E0; --TranslucentColor2: #00A0E0EE; --DarkColor2: #006a94;
   --Translucent: #11111110;
 
 }
@@ -26,6 +26,7 @@
   --Color: var(--Color0);
   --DefaultFontSize: 1.75vmin;
   --DefaultFontFamily: 'Poppins', sans-serif;
+  --HeadingsFontFamily: 'Poppins', sans-serif;
 
   --LowPadding: 5px;
   --NormalPadding: 10px;

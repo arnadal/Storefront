@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Stylesheets/Index.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Content.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Fonts.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   </head>
 
@@ -30,6 +31,14 @@
 
       <h1>Storefront</h1>
       <p>A platform that provides seamless satisfaction to humanitary demands!</p>
+
+      <br>
+
+      <div style="text-align: center;">
+        <b style="font-size: 2rem;">What do you need to find?</b>
+        <br>
+        <input id="Searchbar"></input> &nbsp; <button style="border-radius: 100px;" onclick="SearchItem(document.querySelector(`input#Searchbar`).value)"><i class="material-icons">search</i></button>
+      </div>
 
     </div>
 

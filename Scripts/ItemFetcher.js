@@ -15,6 +15,6 @@ function FetchItems() {
     XHR.send();
   };
 
-  TransmitXHR(`test.json`);
+  TransmitXHR(`Items.json`);
 
 };
