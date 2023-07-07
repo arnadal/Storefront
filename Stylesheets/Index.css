@@ -3,9 +3,8 @@
   outline: none;
   color: var(--Color0);
   transition: background 500ms, color 500ms, font-size 500ms, border-radius 500ms, box-shadow 500ms, filter 500ms;
-  font-family: var(--DefaultFontFamily);
   font-size: var(--DefaultFontSize);
-
+  
 }
 
 :root {
@@ -22,8 +21,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  padding: 0;
-  margin: 0;
 
 }
 
@@ -34,14 +31,13 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  max-height: 15%;
   padding: 10px 0;
 
 }
 
 nav + div {
 
-  margin-top: 10%;
+  margin-top: 10vmin;
 
 }
 
@@ -64,14 +60,42 @@ nav div#NavigationalButtons {
 
 }
 
-nav a:not(div#NavigationalButtons a) {
+nav a {
 
   display: inline;
 
 }
 
-nav a:not(:first-child, div#NavigationalButtons a) {
+nav a:not(:first-child) {
 
   margin-left: 5%;
 
+}
+
+.rectangle {
+    border: 2px solid #3cff00;
+    width: 75%;
+    height: 65vh;
+    margin-top: 3%;
+    margin-left: 10%;
+    border-radius: 50px;
+}
+
+.heading {
+  color: #eeeeee;
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.about {
+  color: #eeeeee;
+  font-size: 2rem;
+  text-align: right;
+  width: 35%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 8%;
+  font-family: 'Poppins', sans-serif;
+  text-transform:capitalize;
 }
