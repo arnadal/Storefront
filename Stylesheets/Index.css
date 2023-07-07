@@ -22,13 +22,12 @@ body {
 
 nav {
 
-  background: inherit;
+  background: var(--Translucent);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 10px 0;
-  filter: brightness(calc(100% * var(--BrightnessDifference)));
 
 }
 

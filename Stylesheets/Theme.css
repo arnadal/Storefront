@@ -2,10 +2,10 @@
 
 :root.DarkTheme {
 
-  --Color0: #eeeeee;
+  --Color0: #EEEEEE;
   --Color1: #111111;
   --Color2: #004080;
-  --BrightnessDifference: 1.75;
+  --Translucent: #EEEEEE10;
 
 }
 
@@ -14,9 +14,9 @@
 :root.LightTheme {
 
   --Color0: #111111;
-  --Color1: #eeeeee;
+  --Color1: #EEEEEE;
   --Color2: rgb(0, 128, 192);
-  --BrightnessDifference: 0.25;
+  --Translucent: #111111EE;
 
 }
 
@@ -37,6 +37,7 @@
   --NormalBorderRadius: 10px;
   --HighBorderRadius: 15px;
 
+  --BrightnessDifference: 0.25;
   --InteractiveBackground: var(--Color2);
 
 }

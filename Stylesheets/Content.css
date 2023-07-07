@@ -30,6 +30,19 @@ button {
 
 }
 
+button:hover {
+
+  filter: brightness(calc(100% * var(--BrightnessDifference)));
+
+}
+
+button:active,
+button:focus {
+
+  filter: brightness(calc(100% * var(--HighBrightnessDifference)));
+
+}
+
 a {
 
   text-decoration: none;
