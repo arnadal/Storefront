@@ -2,7 +2,7 @@ document.querySelector(`nav`).innerHTML = `
   <div id="NavigationalContent" class="NoBackground NoBorderRadius">
 
     <div class="NoBackground NoPadding NoBorderRadius">
-      <a href="${window.location.href}">Overview</a>
+      <a href="index.html">Overview</a>
       <a href="Purchase.html">Start Purchasing</a>
       <a href="About.html">About</a>
     </div>
