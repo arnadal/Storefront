@@ -1,21 +1,44 @@
-function SearchItem(Item) {
+let Theme = `Dark`;
 
-  window.location.href = `../Purchase.html?Search=${Item}`;
+if (localStorage.getItem(`Cart`) == null) {
 
-};
+  localStorage.setItem(`Cart`, JSON.stringify([]));
 
-if (window.location.pathname == `Purchase.html`) {
+}
 
-  
+function ToggleTheme() {
 
-  if (window.location.search.includes(`?Search=`)) {
+  if (Theme == `Light`) {
 
-    function FetchSearch() {
+    document.querySelector(`:root`).classList.replace(`LightTheme`, `DarkTheme`);
+    Theme = `Dark`;
 
-      let Search = window.location.search.replace(`?Search=`, ``);
-  
-    };
+  } else {
+
+    document.querySelector(`:root`).classList.replace(`DarkTheme`, `LightTheme`);
+    Theme = `Light`;
 
   }
 
-}
+};
+
+function AddToCart(ItemName) {
+
+  let Cart = JSON.parse(localStorage.getItem(`Cart`));
+  let ItemObject = {};
+
+  for (let Index = 0; Index < StoreItems.length; Index++) {
+
+    if (StoreItems[Index].ItemName == ItemName) {
+
+      ItemObject = StoreItems[Index];
+      break;
+
+    }
+
+  }
+
+  Cart.push(ItemObject);
+  localStorage.setItem(`Cart`, JSON.stringify(Cart));
+
+};

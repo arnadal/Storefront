@@ -11,7 +11,7 @@ div.FullWidth {
 
   width: 100%;
   margin: 0;
-  border-radius: none;
+  border-radius: 0;
 
 }
 
@@ -90,5 +90,47 @@ input:active,
 input:focus {
 
   filter: brightness(calc(100% * var(--HighBrightnessDifference)));
+
+}
+
+.ItemCard {
+
+  width: 21%;
+  overflow: hidden;
+
+}
+
+.ItemCard:not(:first-child) {
+
+  margin-right: 1%;
+
+}
+
+.ItemCardRow {
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.ItemName {
+
+  font-size: 2rem;
+
+}
+
+.ItemImage {
+
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--HighBorderRadius);
+  height: 200px;
+
+}
+
+.ItemPrice {
+
+  clear: both;
+  font-size: 1.5rem;
 
 }

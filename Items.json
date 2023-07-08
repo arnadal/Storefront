@@ -1,46 +1,46 @@
 [
   {
-    "ItemName": "Shoes",
+    "ItemName": "Blue Shoes",
     "Image": "../Media/shoes.jpg",
     "Price": "₹1159"
   },
   {
-    "ItemName": "Earphones",
+    "ItemName": "Dark Earphones",
     "Image": "../Media/boatjpg.jpg",
     "Price": "₹1099"
   },
   {
-    "ItemName": "Shirts",
+    "ItemName": "Green Shirt",
     "Image": "../Media/shirt.jpg",
     "Price": "₹489"
   },
   {
-    "ItemName": "T-shirts",
+    "ItemName": "Blue T-Shirt",
     "Image": "../Media/tshirt.jpg",
     "Price": "₹369"
   },
   {
-    "ItemName": "Jeans",
+    "ItemName": "Blue Jeans",
     "Image": "../Media/jean.jpg",
     "Price": "₹599"
   },
   {
-    "ItemName": "Fan",
+    "ItemName": "Lightweight Fan",
     "Image": "../Media/fan.jpg",
     "Price": "₹1399"
   },
   {
-    "ItemName": "Air Conditionar",
+    "ItemName": "LG Air Conditioner",
     "Image": "../Media/ac.jpg",
     "Price": "₹31,499"
   },
   {
-    "ItemName": "Table",
+    "ItemName": "Wooden Expandable Table",
     "Image": "../Media/table.jpg",
     "Price": "₹2099"
   },
   {
-    "ItemName": "Chair",
+    "ItemName": "The Sleep Company Chair",
     "Image": "../Media/chair.jpg",
     "Price": "₹24,999"
   },
@@ -50,62 +50,62 @@
     "Price": "₹699"
   },
   {
-    "ItemName": "Band-aid",
+    "ItemName": "Dettol Bandaid",
     "Image": "../Media/bandaid.jpg",
     "Price": "₹220"
   },
   {
-    "ItemName": "Refrigerators",
+    "ItemName": "Navy Blue Refrigerator",
     "Image": "../Media/ref.jpg",
     "Price": "₹12390"
   },
   {
-    "ItemName": "Microwaves",
+    "ItemName": "Panasonic Microwave",
     "Image": "../Media/microwave.jpg",
     "Price": "₹5890"
   },
   {
-    "ItemName": "Washing Machine",
+    "ItemName": "Diamond Drum Washing Machine",
     "Image": "../Media/washingmachine.jpg",
     "Price": "₹15790"
   },
   {
-    "ItemName": "Laptop",
+    "ItemName": "Windows HP Laptop",
     "Image": "../Media/laptop.jpg",
     "Price": "₹87990"
   },
   {
-    "ItemName": "Mobile",
+    "ItemName": "Apple Mobile Phone",
     "Image": "../Media/iphone.jpg",
     "Price": "₹70999"
   },
   {
-    "ItemName": "Smart Watch",
+    "ItemName": "Peach Smart Watch",
     "Image": "../Media/smartwatch.jpg",
     "Price": "₹1099"
   },
   {
-    "ItemName": "Bed",
+    "ItemName": "White Bed",
     "Image": "../Media/bed.jpg",
     "Price": "₹65999"
   },
   {
-    "ItemName": "PlayStation 5",
+    "ItemName": "SONY PlayStation 5",
     "Image": "../Media/ps.jpg",
     "Price": "₹54999"
   },
   {
-    "ItemName": "Bags",
+    "ItemName": "Blue Bag",
     "Image": "../Media/bag.jpg",
     "Price": "₹2199"
   },
   {
-    "ItemName": "Umbrella",
+    "ItemName": "Large Red Umbrella",
     "Image": "../Media/umbrella.jpg",
     "Price": "₹599"
   },
   {
-    "ItemName": "Soap",
+    "ItemName": "Pears Orange Soaps Pack",
     "Image": "../Media/soap.jpg",
     "Price": "₹570"
   },
@@ -115,32 +115,32 @@
     "Price": "₹295"
   },
   {
-    "ItemName": "Let It Snow",
+    "ItemName": "Story: Let It Snow",
     "Image": "../Media/let.jpg",
     "Price": "₹269"
   },
   {
-    "ItemName": "Mosquito Racket Bat",
+    "ItemName": "HIT Mosquito Racket Bat",
     "Image": "../Media/bat.jpg",
     "Price": "₹506"
   },
   {
-    "ItemName": "Jewellery",
+    "ItemName": "Golden Jewellery",
     "Image": "../Media/jwell.jpg",
     "Price": "₹3500"
   },
   {
-    "ItemName": "Guitar",
+    "ItemName": "Dark Juârez Guitar",
     "Image": "../Media/guitar.jpg",
     "Price": "₹100"
   },
   {
-    "ItemName": "Dog Food",
+    "ItemName": "Pedigree: Dog Food",
     "Image": "../Media/dog.jpg",
     "Price": "₹2320"
   },
   {
-    "ItemName": "Football",
+    "ItemName": "NIVIA Football Ball",
     "Image": "../Media/foot.jpg",
     "Price": "₹349"
   }

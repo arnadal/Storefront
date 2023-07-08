@@ -56,17 +56,11 @@ nav div:nth-child(1) {
 nav div#NavigationalButtons {
 
   position: fixed;
-  top: 5px;
+  top: 0;
   right: 5%;
-  width: 12.5%;
+  width: 25%;
   margin: 0;
   text-align: right;
-
-}
-
-nav a:not(div#NavigationalButtons a) {
-
-  display: inline;
 
 }
 

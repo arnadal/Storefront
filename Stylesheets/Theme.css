@@ -11,9 +11,9 @@
 
 :root.LightTheme {
 
-  --Color0: #111111;
+  --Color0: #111111; --DarkColor0: #909090;
   --Color1: #EEEEEE;
-  --Color2: #00A0E0; --TranslucentColor2: #00A0E0EE; --DarkColor2: #006a94;
+  --Color2: #2AC3FF; --TranslucentColor2: #00A0E0EE; --DarkColor2: #006a94;
   --Translucent: #11111110;
 
 }
