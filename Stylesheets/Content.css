@@ -7,6 +7,8 @@ div {
 
 }
 
+
+
 div.FullWidth {
 
   width: 100%;
@@ -147,16 +149,18 @@ h1{
   color: rgba(255,255,255,0.98);
   text-transform: uppercase;
   font-size: 2.4rem;
+  
 }
 
 p {
   color: #fff;
   font-family: 'Lato', sans-serif;
-  text-align: center;
-  font-size: 0.8rem;
+  text-align: left;
+  font-size: 1rem;
   line-height: 150%;
   letter-spacing: 2px;
   text-transform: uppercase;
+
 }
 
 .button-wrapper{
@@ -205,4 +209,16 @@ p {
   border-color: rgba(255, 255, 255, 0.9);
   filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
   transition: all .3s ease;    
+}
+
+span {
+  color: goldenrod;
+  font-family: 'Righteous', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.star {
+  float: right;
+  margin-top: -7%;
 }
