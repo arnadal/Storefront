@@ -42,7 +42,7 @@ function RenderItems(Data) {
 
     let NewElement = document.createElement(`div`);
     NewElement.className = `ItemCard`;
-    NewElement.innerHTML = `<div class="ItemImage" style="background-image: url('${Data[Index].Image}');" alt="${Data[Index].ItemName}"></div><b class="ItemName">${Data[Index].ItemName}</b><br><span class="ItemPrice">${Data[Index].Price}</span><br><button id="AddToCartButton" onclick="AddToCart('${Data[Index].ItemName}')" style="position: relative; bottom: 0; right: 0; float: right;"><i class="material-icons">add_shopping_cart</i></button>`;
+    NewElement.innerHTML = `<div class="ItemImage" style="background-image: url('${Data[Index].Image}');" alt="${Data[Index].ItemName}"></div><b class="ItemName">${Data[Index].ItemName}</b><br><span class="ItemPrice">${Data[Index].Price}</span><br>${(window.location.pathname == `/Purchase.html`) ? `<button id="AddToCartButton" onclick="AddToCart('${Data[Index].ItemName}')" style="position: relative; bottom: 0; right: 0; float: right;"><i class="material-icons">add_shopping_cart</i></button>` : ``}`;
     Parent.appendChild(NewElement);
     UltimateParent.appendChild(Parent);
 
@@ -93,10 +93,5 @@ if (window.location.pathname == `/Purchase.html`) {
 if (window.location.pathname == `/Cart.html`) {
 
   RenderItems(JSON.parse(localStorage.getItem(`Cart`)));
-  for (let Index = 0; Index < document.querySelectorAll(`AddToCartButton`).length; Index++) {
-
-    document.querySelectorAll(`AddToCartButton`)[Index].remove;
-
-  }
 
 }
