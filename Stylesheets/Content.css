@@ -1,4 +1,5 @@
-div, form {
+div,
+form {
 	background: var(--Translucent);
 	padding: var(--HighPadding);
 	margin: 15px;
@@ -118,8 +119,9 @@ input:focus:not(:disabled) {
 	filter: brightness(calc(100% * var(--HighBrightnessDifference)));
 }
 
-.ItemCard, form {
-	width: 10em;
+.ItemCard,
+form {
+	width: 20em;
 	height: 30em;
 	background-color: var(--Translucent);
 	border-radius: 12px;
@@ -136,6 +138,8 @@ input:focus:not(:disabled) {
 
 .ItemCard {
 	background: var(--TranslucentColor4);
+	padding: 1em;
+	width: 500px;
 }
 
 form {
@@ -148,7 +152,7 @@ form div {
 }
 
 .ItemName {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .ItemImage {
@@ -158,6 +162,7 @@ form div {
 	border-radius: var(--LowBorderRadius);
 	width: 100%;
 	height: 60%;
+	padding: 0;
 }
 
 .ItemPrice {
@@ -282,6 +287,10 @@ br {
 .LargeText {
 	font-size: 2.5em;
 	font-weight: bold;
+}
+
+#finalWork {
+	width: 20em;
 }
 
 .FlexClass {
