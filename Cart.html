@@ -38,9 +38,128 @@
 
     <div>
 
-      <div id="StoreItems">
+      <div>
 
-        
+        <div class="NoBackground NoPadding NoMargin FlexClass">
+
+          <div>
+
+            <span id="CartData_TotalPrice" class="LargeText"></span>
+            <br>
+            <b>Total Price</b>
+
+          </div>
+
+          <div>
+
+            <span id="CartData_Items" class="LargeText"></span>
+            <br>
+            <b>Items</b>
+
+          </div>
+
+          <div>
+
+            <span id="CartData_ItemKinds" class="LargeText"></span>
+            <br>
+            <b>Kinds of Items</b>
+
+          </div>
+
+        </div>
+
+        <div class="NoBackground" class="FlexClass">
+
+          <div class="NoBackground NoPadding NoMargin" style="text-align: center;">
+
+            <button onclick="ClearCart()">Clear Cart</button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="StoreItems" class="FlexClass"></div>
+
+      <div id="Checkout" class="NoBackground FlexClass">
+
+        <button id="CheckoutStartButton" onclick="StartCheckout();">Proceed to Checkout</button>
+
+        <form id="CheckoutForm">
+
+          <div class="NoMargin" style="float: left;">
+
+            <label>Name</label>
+            <br>
+            <input required></input>
+
+            <br>
+            <br>
+
+            <label>Address</label>
+            <br>
+            <small>Sit back and relax, while we deliver.</small>
+            <br>
+            <input required></input>
+
+            <br>
+            <br>
+
+            <label>Phone Number</label>
+            <br>
+            <small>An alternative resource for communication.</small>
+            <br>
+            <input required></input>
+
+            <br>
+            <br>
+
+            <label>Postal Code</label>
+            <br>
+            <input required></input>
+
+          </div>
+
+          <div class="NoMargin" style="float: right;">
+
+            <label>Card Number</label>
+            <br>
+            <input required></input>
+
+            <br>
+            <br>
+
+            <label>CVC</label>
+            <br>
+            <small>A number written on the backface of the card.</small>
+            <br>
+            <input required></input>
+
+            <br>
+            <br>
+
+            <label>Name on the Card</label>
+            <br>
+            <small>The name written on the card.</small>
+            <br>
+            <input required></input>
+
+            <br>
+            <br>
+
+            <label>Expiration Date</label>
+            <br>
+            <input required placeholder="MM/YY"></input>
+
+          </div>
+
+          <br>
+          <br>
+
+          <button onclick="Purchase()" style="margin-top: 2.5%;">Purchase!</button>
+
+        </form>
 
       </div>
 

@@ -8,10 +8,14 @@
     <title>Storefront</title>
 
     <link rel="stylesheet" href="Stylesheets/Theme.css" type="text/css">
+    <link rel="stylesheet" href="Stylesheets/Animations.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Index.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Content.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
 
   </head>
 
@@ -29,37 +33,47 @@
 
     <div>
 
-      <h1>Storefront</h1>
-      <p>A platform that provides seamless satisfaction to humanitary demands!</p>
+      <div style="float: left; height: 20%;">
+
+        <h1>Storefront</h1>
+        <p>A platform that provides seamless satisfaction to humanitary demands!</p>
+
+      </div>
+
+      <div style="perspective: 250px; float: right; width: 20%; height: 20%;">
+
+        <img class="Effect3D" src="Media/online-shopping.gif" style="width: 100%; height: 100%; border-radius: 15px;"></img>
+
+      </div>
 
       <br>
 
-      <div style="text-align: center;">
+      <div style="text-align: center; clear: both;">
         <b style="font-size: 2rem;">What do you need to find?</b>
         <br>
-        <input id="Searchbar"></input> &nbsp; <button style="border-radius: 100px;" onclick="SearchItem(document.querySelector(`input#Searchbar`).value)"><i class="material-icons">search</i></button>
+        <input id="Searchbar" placeholder=""></input> &nbsp; <button class="ButtonForInput" style="border-radius: 100px;" onclick="SearchItem(document.querySelector(`input#Searchbar`).value)"><i class="material-icons">search</i></button>
       </div>
 
     </div>
 
     <div>
 
-      <h1><span>Stats</span></h1>
-      <p>Over ₹200,000 of items being sold. The more you buy, the more you get!</p>
+      <h1><span>Statistics</span></h1>
+      <p>Over ₹200,000 of items being sold! The more you buy, the more you get!</p>
 
     </div>
   
     <div>
 
       <h1><span>Quality</span></h1>
-      <p>Products from the best brands, and partnered with various top brands!</p>
+      <p>Products from best sellers!</p>
 
     </div>
 
     <div>
 
-      <h1><span>Rated</span></h1>
-      <p>Rated 4.5 in services, fast delivery, reliable support, 7 day return policy!</p>
+      <h1><span>Large Stocks</span></h1>
+      <p>Don't be jealous if your friend has something and it isn't with you!</p>
 
     </div>
 
