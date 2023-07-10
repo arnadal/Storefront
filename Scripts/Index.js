@@ -57,7 +57,7 @@ function HideNotification() {
 
 };
 
-function AddToCart(Button, ItemName) {
+function AddToCart(ItemName) {
 
   let Cart = JSON.parse(localStorage.getItem(`Cart`));
   let ItemObject = {};
