@@ -8,10 +8,14 @@
     <title>Storefront</title>
 
     <link rel="stylesheet" href="Stylesheets/Theme.css" type="text/css">
+    <link rel="stylesheet" href="Stylesheets/Animations.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Index.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Content.css" type="text/css">
     <link rel="stylesheet" href="Stylesheets/Fonts.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+		/>
 
   </head>
 
@@ -34,6 +38,12 @@
 
       <p>If you would like to add multiple of the same item in your cart, add to the cart that many times!</p>
 
+      <p>
+        <span>Service Fee</span> &nbsp; Every item corresponds to +₹100 to the service fee. We reduce ₹1 from the final service fee.
+        <br>
+        <span>Discount</span> &nbsp; We add a discount of ₹25 on every 2nd item in your cart.
+      </p>
+
     </div>
 
     <div>
@@ -44,9 +54,33 @@
 
           <div>
 
+            <span id="CartData_TotalAmount" class="LargeText"></span>
+            <br>
+            <b>Total Amount</b>
+
+          </div>
+
+          <div>
+
             <span id="CartData_TotalPrice" class="LargeText"></span>
             <br>
-            <b>Total Price</b>
+            <b>Price of All Items</b>
+
+          </div>
+
+          <div>
+
+            <span id="CartData_ServiceFee" class="LargeText"></span>
+            <br>
+            <b>Service Fee</b>
+
+          </div>
+
+          <div>
+
+            <span id="CartData_Discount" class="LargeText"></span>
+            <br>
+            <b>Discount</b>
 
           </div>
 
@@ -72,6 +106,11 @@
 
           <div class="NoBackground NoPadding NoMargin" style="text-align: center;">
 
+            <br>
+            Taxes are included in any item or cart price or amount shown.
+            <br>
+            <br>
+
             <button onclick="ClearCart()">Clear Cart</button>
 
           </div>
@@ -84,9 +123,17 @@
 
       <div id="Checkout" class="NoBackground FlexClass">
 
-        <button id="CheckoutStartButton" onclick="StartCheckout();">Proceed to Checkout</button>
+        <div class="NoBackground NoPadding NoMargin" style="width: unset;">
+          <button id="CheckoutStartButton" onclick="StartCheckout();">Proceed to Checkout</button>
+          <br>
+          <small id="CheckoutStartButtonDisabledText">You cannot proceed to checkout with an empty cart.</small>
+        </div>
 
         <form id="CheckoutForm">
+
+          <span id="CartData_TotalAmount2" class="LargeText" style="clear: both;"></span>
+
+          <br>
 
           <div class="NoMargin" style="float: left;">
 
@@ -163,6 +210,10 @@
 
       </div>
 
+    </div>
+
+    <div id="Notification" class="Notification Positive" onclick="HideNotification()">
+      Loading…
     </div>
 
     <script src="Scripts/Masterfile.js"></script>

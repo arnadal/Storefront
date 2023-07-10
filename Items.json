@@ -1,147 +1,176 @@
 [
   {
-    "ItemName": "Blue Shoes",
+    "ItemName": "Pair of Blue Shoes",
     "Image": "Media/shoes.jpg",
-    "Price": "₹1159"
+    "Price": "₹1159",
+    "Stock": 4
   },
   {
-    "ItemName": "Dark Earphones",
+    "ItemName": "Pair of Dark Earphones",
     "Image": "Media/boatjpg.jpg",
-    "Price": "₹1099"
+    "Price": "₹1099",
+    "Stock": 6
   },
   {
     "ItemName": "Green Shirt",
     "Image": "Media/shirt.jpg",
-    "Price": "₹489"
+    "Price": "₹489",
+    "Stock": 12
   },
   {
     "ItemName": "Blue T-Shirt",
     "Image": "Media/tshirt.jpg",
-    "Price": "₹369"
+    "Price": "₹369",
+    "Stock": 12
   },
   {
     "ItemName": "Blue Jeans",
     "Image": "Media/jean.jpg",
-    "Price": "₹599"
+    "Price": "₹599",
+    "Stock": 6
   },
   {
-    "ItemName": "Lightweight Fan",
+    "ItemName": "Lightweight Ceiling Fan",
     "Image": "Media/fan.jpg",
-    "Price": "₹1399"
+    "Price": "₹1399",
+    "Stock": 2
   },
   {
     "ItemName": "Panasonic Air Conditioner",
     "Image": "Media/ac.jpg",
-    "Price": "₹31,499"
+    "Price": "₹31499",
+    "Stock": 1
   },
   {
     "ItemName": "Wooden Expandable Table",
     "Image": "Media/table.jpg",
-    "Price": "₹2099"
+    "Price": "₹2099",
+    "Stock": 3
   },
   {
     "ItemName": "The Sleep Company Chair",
     "Image": "Media/chair.jpg",
-    "Price": "₹24,999"
+    "Price": "₹24999",
+    "Stock": 3
   },
   {
     "ItemName": "Remote Control Car",
     "Image": "Media/rccar.jpg",
-    "Price": "₹699"
+    "Price": "₹699",
+    "Stock": 4
   },
   {
     "ItemName": "Dettol Bandaid",
     "Image": "Media/bandaid.jpg",
-    "Price": "₹220"
+    "Price": "₹220",
+    "Stock": 4
   },
   {
-    "ItemName": "Navy Blue Refrigerator",
+    "ItemName": "Samsung Refrigerator",
     "Image": "Media/ref.jpg",
-    "Price": "₹12390"
+    "Price": "₹12390",
+    "Stock": 1
   },
   {
     "ItemName": "LG Microwave",
     "Image": "Media/microwave.jpg",
-    "Price": "₹5890"
+    "Price": "₹5890",
+    "Stock": 2
   },
   {
     "ItemName": "Diamond Drum Washing Machine",
     "Image": "Media/washingmachine.jpg",
-    "Price": "₹15790"
+    "Price": "₹15790",
+    "Stock": 2
   },
   {
     "ItemName": "Windows 11 Inspiron Laptop",
     "Image": "Media/laptop.jpg",
-    "Price": "₹87990"
+    "Price": "₹87990",
+    "Stock": 3
   },
   {
     "ItemName": "Mobile Phone: Apple iPhone 14",
     "Image": "Media/iphone.jpg",
-    "Price": "₹70999"
+    "Price": "₹70999",
+    "Stock": 3
   },
   {
     "ItemName": "Smart Watch",
     "Image": "Media/smartwatch.jpg",
-    "Price": "₹1099"
+    "Price": "₹1099",
+    "Stock": 3
   },
   {
     "ItemName": "Timberland Wooden Bed",
     "Image": "Media/bed.jpg",
-    "Price": "₹65999"
+    "Price": "₹65999",
+    "Stock": 3
   },
   {
     "ItemName": "SONY PlayStation 5",
     "Image": "Media/ps.jpg",
-    "Price": "₹54999"
+    "Price": "₹54999",
+    "Stock": 1
   },
   {
     "ItemName": "Arctic Fox Backpack",
     "Image": "Media/backpack.jpg",
-    "Price": "₹2199"
+    "Price": "₹2199",
+    "Stock": 6
   },
   {
-    "ItemName": "Large Red Umbrella",
+    "ItemName": "Large-Diameter Red Umbrella",
     "Image": "Media/umbrella.jpg",
-    "Price": "₹599"
+    "Price": "₹599",
+    "Stock": 4
   },
   {
     "ItemName": "Pears Soap 75 G",
     "Image": "Media/soap.jpg",
-    "Price": "₹570"
+    "Price": "₹570",
+    "Stock": 20
   },
   {
     "ItemName": "Woman's Makeup Kit",
     "Image": "Media/makeup.jpg",
-    "Price": "₹295"
+    "Price": "₹295",
+    "Stock": 6
   },
   {
     "ItemName": "Story: Let It Snow",
     "Image": "Media/let.jpg",
-    "Price": "₹269"
+    "Price": "₹269",
+    "Stock": 6
   },
   {
     "ItemName": "HIT Mosquito Attack Bat",
     "Image": "Media/bat.jpg",
-    "Price": "₹506"
+    "Price": "₹506",
+    "Stock": 8
   },
   {
     "ItemName": "Golden Jewellery",
     "Image": "Media/jwell.jpg",
-    "Price": "₹3500"
+    "Price": "₹3500",
+    "Stock": 1
   },
   {
     "ItemName": "Dark Juârez Guitar",
     "Image": "Media/guitar.jpg",
-    "Price": "₹100"
+    "Price": "₹100",
+    "Stock": 1
   },
   {
     "ItemName": "Pedigree: Dog Food",
     "Image": "Media/dog.jpg",
-    "Price": "₹2320"
+    "Price": "₹2320",
+    "Stock": 8
   },
   {
     "ItemName": "NIVIA Football Ball",
     "Image": "Media/foot.jpg",
-    "Price": "₹349"
+    "Price": "₹349",
+    "Stock": 25
   }
 ]

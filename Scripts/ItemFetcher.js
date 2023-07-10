@@ -107,7 +107,15 @@ async function MainCode() {
   if (window.location.pathname.includes(`/Cart.html`)) {
 
     Cart = JSON.parse(localStorage.getItem(`Cart`));
-    if (Cart.length == 0) document.querySelector(`#CheckoutStartButton`).setAttribute(`disabled`, `true`);
+
+    if (Cart.length == 0) {
+      document.querySelector(`#CheckoutStartButton`).setAttribute(`disabled`, `true`);
+      document.querySelector(`#CheckoutStartButtonDisabledText`).setAttribute(`style`, `display: initial;`);
+    } else {
+      document.querySelector(`#CheckoutStartButton`).removeAttribute(`disabled`);
+      document.querySelector(`#CheckoutStartButton`).removeAttribute(`style`);
+    }
+
     RenderItems(Cart);
 
     setInterval(function() {
@@ -115,7 +123,17 @@ async function MainCode() {
       if (JSON.stringify(Cart) != localStorage.getItem(`Cart`)) {
 
         Cart = JSON.parse(localStorage.getItem(`Cart`));
-        if (Cart.length == 0) document.querySelector(`#CheckoutStartButton`).setAttribute(`disabled`, `true`);
+
+        console.log(Cart.length);
+
+        if (Cart.length == 0) {
+          document.querySelector(`#CheckoutStartButton`).setAttribute(`disabled`, `true`);
+          document.querySelector(`#CheckoutStartButtonDisabledText`).setAttribute(`style`, `display: initial;`);
+        } else {
+          document.querySelector(`#CheckoutStartButton`).removeAttribute(`disabled`);
+          document.querySelector(`#CheckoutStartButton`).removeAttribute(`style`);
+        }
+
         RenderItems(Cart);
         RenderCartData(EvaluateData(JSON.parse(localStorage.getItem(`Cart`))));
 

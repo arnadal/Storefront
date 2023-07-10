@@ -31,16 +31,16 @@ h1 {
 	font-size: 5rem;
 }
 h2 {
-	font-size: 4rem;
-}
-h3 {
 	font-size: 3rem;
 }
+h3 {
+	font-size: 2.5rem;
+}
 h4 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 h5 {
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 h6 {
 	font-size: 1rem;
@@ -185,7 +185,7 @@ form div {
 	font-family: "Poppins", sans-serif;
 }
 
-.aboutimage {
+.aboutImage {
 	width: 60%;
 	height: 60%;
 	margin-top: 3%;
@@ -264,7 +264,6 @@ form div {
 
 span {
 	color: var(--Goldenrod);
-	font-size: 2.4rem;
 }
 
 small {
@@ -272,12 +271,16 @@ small {
 	color: var(--TranslucentColor0);
 }
 
+small#CheckoutStartButtonDisabledText {
+	display: none;
+}
+
 br {
 	user-select: none;
 }
 
 .LargeText {
-	font-size: 3rem;
+	font-size: 2.5em;
 	font-weight: bold;
 }
 

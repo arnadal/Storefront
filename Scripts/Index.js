@@ -36,31 +36,28 @@ function ToggleTheme() {
 
 };
 
-function Notify(Positivity, Message) {
+function Notify(Positivity = true, Message = `Something happened that we couldn't identify!`) {
 
-  let NewElement = document.createElement(`div`);
-  NewElement.innerHTML = Message;
-  NewElement.setAttribute(`style`, `
-
-  background: var(--Color4);
-  border-left: 7.5px ${(Positivity) ? `#59FF64` : `#FF9F82`} solid;
-  color: #EEEEEE;
-  border-radius: var(--HighBorderRadius);
-  position: fixed;
-  right: 1%;
-  bottom: 1%;
-
-  `);
-
-  document.body.appendChild(NewElement);
+  let Element = document.querySelector(`#Notification`);
+  Element.innerHTML = Message;
+  if (Positivity) Element.classList.replace(`Negative`, `Positive`);
+  if (!Positivity) Element.classList.replace(`Positive`, `Negative`);
+  Element.classList.toggle(`Shown`);
 
   setTimeout(function() {
-    NewElement.remove();
-  }, 5000);
+    HideNotification();
+  }, 10000);
 
 };
 
-function AddToCart(ItemName) {
+function HideNotification() {
+
+  let Element = document.querySelector(`#Notification`);
+  Element.classList.replace(`Shown`, `NotShown`);
+
+};
+
+function AddToCart(Button, ItemName) {
 
   let Cart = JSON.parse(localStorage.getItem(`Cart`));
   let ItemObject = {};
@@ -87,7 +84,8 @@ function ClearCart() {
 
   localStorage.setItem(`Cart`, JSON.stringify([]));
   Cart = JSON.parse(localStorage.getItem(`Cart`));
-  document.querySelector(`#CheckoutStartButton`).setAttribute(`disabled`, `true`);
+  document.querySelector(`#CheckoutStartButton`).removeAttribute(`disabled`);
+  document.querySelector(`#CheckoutStartButtonDisabledText`).removeAttribute(`style`);
   RenderItems(Cart);
   RenderCartData(EvaluateData(JSON.parse(localStorage.getItem(`Cart`))))
 
@@ -103,13 +101,29 @@ function StartCheckout() {
 function Purchase() {
 
   ClearCart();
+  Notify(false, `Apologies! Making a successful purchase is not available right now.`);
+
+};
+
+function CalculateMarket() {
+  let Total_INR = 0;
+
+  for (let Index = 0; Index < StoreItems.length; Index++) {
+    console.log(Number(StoreItems[Index].Price.replace(`₹`, ``)), StoreItems[Index].Stock);
+    Total_INR += Number(StoreItems[Index].Price.replace(`₹`, ``)) * StoreItems[Index].Stock;
+  }
+
+  return Total_INR;
 
 };
 
 function EvaluateData(Data = []) {
 
   let Evaluation = {
+    TotalAmount_INR: 0,
     TotalPrice_INR: 0,
+    ServiceFee_INR: 0,
+    Discount_INR: 0,
     Items: Data.length,
     ItemKinds: 0
   };
@@ -123,6 +137,9 @@ function EvaluateData(Data = []) {
       let Element = Data[Index];
 
       Evaluation.TotalPrice_INR += Number(Element.Price.replace(`₹`, ``));
+      Evaluation.ServiceFee_INR += 100;
+
+      if (Index != 0 && Index % 2 == 0) Evaluation.Discount_INR += 25;
 
       if (!IndexedItemKinds.includes(Element.ItemName)) {
 
@@ -133,9 +150,14 @@ function EvaluateData(Data = []) {
 
     }
 
-    Evaluation.TotalPrice_INR = `₹${Evaluation.TotalPrice_INR}`;
-
   }
+
+  Evaluation.TotalAmount_INR = (Evaluation.TotalPrice_INR + Evaluation.ServiceFee_INR) - Evaluation.Discount_INR;
+
+  Evaluation.TotalAmount_INR = `₹${Evaluation.TotalAmount_INR.toLocaleString()}`;
+  Evaluation.TotalPrice_INR = `₹${Evaluation.TotalPrice_INR.toLocaleString()}`;
+  Evaluation.ServiceFee_INR = `₹${Evaluation.ServiceFee_INR.toLocaleString()}`;
+  Evaluation.Discount = `₹${Evaluation.Discount_INR.toLocaleString()}`;
 
   return Evaluation;
 
@@ -143,9 +165,14 @@ function EvaluateData(Data = []) {
 
 function RenderCartData(EvaluationReport) {
 
+  document.querySelector(`span#CartData_TotalAmount`).innerHTML = EvaluationReport.TotalAmount_INR;
   document.querySelector(`span#CartData_TotalPrice`).innerHTML = EvaluationReport.TotalPrice_INR;
+  document.querySelector(`span#CartData_ServiceFee`).innerHTML = EvaluationReport.ServiceFee_INR;
+  document.querySelector(`span#CartData_Discount`).innerHTML = EvaluationReport.Discount;
   document.querySelector(`span#CartData_Items`).innerHTML = EvaluationReport.Items;
   document.querySelector(`span#CartData_ItemKinds`).innerHTML = EvaluationReport.ItemKinds;
+
+  document.querySelector(`span#CartData_TotalAmount2`).innerHTML = EvaluationReport.TotalAmount_INR;
 
 };
 
@@ -166,4 +193,16 @@ window.addEventListener("scroll", function() {
   prevScrollPos = currentScrollPos;
 });
 
-Notify(true);
+if (sessionStorage.getItem(`Greeted`) == null) {
+  sessionStorage.setItem(`Greeted`, `false`);
+}
+
+let Greeted = (sessionStorage.getItem(`Greeted`) == `false`) ? false : true;
+
+setTimeout(function() {
+  if (!Greeted) {
+    Notify(true, `Welcome!`);
+    sessionStorage.setItem(`Greeted`, `true`);
+    Greeted = true;
+  }
+}, 1000);

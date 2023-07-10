@@ -88,3 +88,39 @@ nav.hidden {
 nav:hover {
 	transform: translateY(0); /* Show the navbar on hover */
 }
+
+.Notification {
+	background: var(--Color4);
+	border-left-width: 7.5px;
+	border-left-style: solid;
+  width: 15%;
+  color: #EEEEEE;
+  border-radius: var(--HighBorderRadius);
+  position: fixed;
+  right: -25%;
+  bottom: 1%;
+}
+
+.Notification.Shown {
+	animation-name: NotificationMoveIn;
+	animation-duration: 2500ms;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation-iteration-count: 1;
+	right: 1%;
+}
+
+.Notification.NotShown {
+	animation-name: NotificationMoveOut;
+	animation-duration: 2500ms;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	animation-iteration-count: 1;
+	right: -25%;
+}
+
+.Notification.Positive {
+	border-left-color: #59FF64;
+}
+
+.Notification.Negative {
+	border-left-color: #FF9F82;
+}

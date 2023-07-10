@@ -11,3 +11,31 @@
 	}
 
 }
+
+@keyframes NotificationMoveIn {
+
+	from {
+
+		right: -25%;
+
+	} to {
+
+		right: 1%;
+
+	}
+
+}
+
+@keyframes NotificationMoveOut {
+
+	from {
+
+		right: 1%;
+
+	} to {
+
+		right: -25%;
+
+	}
+
+}

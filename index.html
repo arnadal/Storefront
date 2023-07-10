@@ -32,7 +32,6 @@
     </nav>
 
     <div>
-
       <div style="float: left; height: 20%;">
 
         <h1>Storefront</h1>
@@ -48,7 +47,7 @@
 
       <br>
 
-      <div style="text-align: center; clear: both;">
+      <div style="clear: both;">
         <b style="font-size: 2rem;">What do you need to find?</b>
         <br>
         <input id="Searchbar" placeholder=""></input> &nbsp; <button class="ButtonForInput" style="border-radius: 100px;" onclick="SearchItem(document.querySelector(`input#Searchbar`).value)"><i class="material-icons">search</i></button>
@@ -58,23 +57,27 @@
 
     <div>
 
-      <h1><span>Statistics</span></h1>
-      <p>Over ₹200,000 of items being sold! The more you buy, the more you get!</p>
+      <h2>From <span style="font-size: unset;">₹998,704</span> to choose!</h2>
+      <p>Almost ₹1,000,000 of items being sold! The more you buy, the more you get! The number shown is the precise, realtime amount of our market!</p>
 
     </div>
   
     <div>
 
-      <h1><span>Quality</span></h1>
-      <p>Products from best sellers!</p>
+      <h2>Low Service Fees, <br>Speedy Deliveries!</h2>
+      <p>The comissioned amount we receive from your purchases is low. We value time, so we deliver your items in time!</p>
 
     </div>
 
     <div>
 
-      <h1><span>Large Stocks</span></h1>
-      <p>Don't be jealous if your friend has something and it isn't with you!</p>
+      <h2>Large Quality Stocks</h2>
+      <p>It is a large stock. In fact, it is quality too. Don't be jealous if your friend has something and it isn't with you! Find your desire here like them, except its quality!</p>
 
+    </div>
+
+    <div id="Notification" class="Notification Positive" onclick="HideNotification()">
+      Loading…
     </div>
 
     <script src="Scripts/Masterfile.js"></script>
